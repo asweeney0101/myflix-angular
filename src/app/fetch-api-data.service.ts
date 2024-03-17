@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
-import { catchError } from 'rxjs/internal/operators';
-import { map } from 'rxjs/operators'; 
+import { catchError, map, Observable, throwError} from 'rxjs'; 
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
-import { Observable, throwError } from 'rxjs';
 
 
 //Declaring the api url that will provide data for the client app
@@ -30,7 +28,7 @@ private handleError(error: HttpErrorResponse): any {
   }
 
   // Non-typed response extraction
-  private extractResponseData(res: Response): any {
+  private extractResponseData(res: Response | Object): any {
     const body = res;
     return body || { };
   }
