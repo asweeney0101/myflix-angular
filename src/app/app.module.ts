@@ -17,7 +17,6 @@ import { UserRegistrationFormComponent } from './user-registration-form/user-reg
 
 @NgModule({
     declarations: [
-      AppComponent, 
       UserRegistrationFormComponent
     ],
     imports: [
@@ -34,7 +33,7 @@ import { UserRegistrationFormComponent } from './user-registration-form/user-reg
       BrowserAnimationsModule
     ],
     providers: [],
-    bootstrap: [AppComponent]
+    bootstrap: []
   })
   export class AppModule { }
 

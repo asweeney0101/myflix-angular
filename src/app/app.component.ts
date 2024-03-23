@@ -3,6 +3,7 @@ import { UserRegistrationFormComponent } from './user-registration-form/user-reg
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({
+  standalone: true,
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
